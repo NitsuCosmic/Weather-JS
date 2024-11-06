@@ -1,0 +1,104 @@
+* {
+	font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont,
+		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+		sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100svh;
+	background-color: hsl(0, 0%, 6%);
+}
+
+.hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+}
+
+.hero h1 {
+	color: hsl(0, 0%, 100%);
+	font-size: clamp(0.75rem, 6vw, 2rem);
+}
+
+.main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+}
+
+.weather {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 42rem;
+	gap: 2rem;
+}
+
+.weather__form {
+	display: flex;
+	position: relative;
+	width: 100%;
+}
+
+.weather__form__input {
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	border-end-end-radius: 0;
+	border-top-right-radius: 0;
+	border: none;
+	width: 100%;
+}
+
+.weather__form__button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 1rem;
+	border-top-right-radius: 0.5rem;
+	border-end-end-radius: 0.5rem;
+	border: none;
+	cursor: pointer;
+	background-color: hsl(0, 0%, 0%);
+	color: hsl(0, 0%, 100%);
+
+	&:hover {
+		background-color: hsl(0, 0%, 10%);
+	}
+}
+
+.weather__body {
+	color: hsl(0, 0%, 100%);
+}
+
+.weather__info {
+	text-align: center;
+
+	h3 {
+		font-weight: 500;
+	}
+}
+
+.weather__conditions {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 2rem;
+}
+
+.weather__info__city {
+	font-size: clamp(1.5rem, 7vw, 2rem);
+	line-height: 2rem;
+}
+
+.weather__conditions__temp {
+	font-size: clamp(1.5rem, 10vw, 2rem);
+}
+
+.weather__conditions__condition {
+	font-size: clamp(1rem, 7vw, 1.25rem);
+}
